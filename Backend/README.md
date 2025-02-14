@@ -25,3 +25,28 @@ The request body should be a JSON object with the following fields:
   - `email`: ( string, required )A string representing the user's email address with a minimum length of 5 characters (required).
   - `password`: ( string,required)A string with a minimum length of 6 characters (required).
 - `token`(string): JWT Token
+
+# User Login Endpoint
+
+## Endpoint: `/users/login`
+
+### Method: POST
+
+### Description:
+Logs in an existing user by validating their email and password.
+
+### Request Body:
+The request body should be a JSON object with the following fields:
+
+- `email`: A string representing the user's email address (required).
+- `password`: A string with a minimum length of 6 characters (required).
+
+### Example Response:
+
+- `user`:(object):
+  - `fullname`: (object).
+    - `firstname`: ( string,required ): A string with a minimum length of 3 characters (required).
+    - `lastname`: ( string,optional ): A string with a minimum length of 3 characters (optional).
+  - `email`: ( string, required )A string representing the user's email address with a minimum length of 5 characters (required).
+  - `password`: ( string,required)A string with a minimum length of 6 characters (required).
+- `token`(string): JWT Token
