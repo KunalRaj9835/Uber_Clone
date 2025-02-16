@@ -1,6 +1,6 @@
 # User Registration Endpoint
 
-## Endpoint: `/users/register`
+## Endpoint: `/user/register`
 
 ### Method: POST
 
@@ -28,7 +28,7 @@ The request body should be a JSON object with the following fields:
 
 # User Login Endpoint
 
-## Endpoint: `/users/login`
+## Endpoint: `/user/login`
 
 ### Method: POST
 
@@ -53,7 +53,7 @@ The request body should be a JSON object with the following fields:
 
 # User Profile Endpoint
 
-## Endpoint: `/users/profile`
+## Endpoint: `/user/profile`
 
 ### Method: GET
 
@@ -73,7 +73,7 @@ Requires a valid JWT token in the Authorization header:
 
 # User Logout Endpoint
 
-## Endpoint: `/users/logout`
+## Endpoint: `/user/logout`
 
 ### Method: POST
 
